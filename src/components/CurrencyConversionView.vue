@@ -7,11 +7,11 @@
     <form @submit.prevent="">
       <div>
         <label>Currency:</label>
-        <input type="text" placeholder="$" :value="currency" />
+        <input type="text" placeholder="$" @change="currency = $event.target.value" :value="currency" />
       </div>
       <div>
         <label>Quotation:</label>
-        <input type="text" placeholder="37" :value="quotation" />
+        <input type="text" placeholder="37" @change="quotation = $event.target.value" :value="quotation" />
       </div>
       <input type="button" @click.prevent="confirm" value="Confirm" />
     </form>
