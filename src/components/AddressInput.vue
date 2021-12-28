@@ -1,6 +1,6 @@
 <template>
   <div class="address-input">
-    <input @input="$emit('update:modelValue', $event.target.value)" :value="value" />
+    <input @input="$emit('update:modelValue', $event.target.value); value = $event.target.value" :value="value" />
     <div><button @click="confirm">Confirm</button></div>
   </div>
 </template>
