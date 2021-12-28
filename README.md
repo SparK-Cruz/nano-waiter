@@ -1,4 +1,4 @@
-# nano-receiver
+# nano-waiter
 
 ## Project setup
 ```
